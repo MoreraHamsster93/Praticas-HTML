@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Practica HTML</title>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+        } 
+    </style>
+</head>
+<body>  
+
+
+    <table style="width: 500px;">
+        <thead>
+
+        <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+
+        </thead>
+
+        <tbody>
+            
+        </tr>
+        <tr>
+            <td>Chanchito 1</td>
+            <td>50,000 colonoes</td>
+        </tr>
+        <tr>
+            <td>Chanchito 2</td>
+            <td>80,000 colones</td>
+        </tr>
+        <tr>
+            <td>Chanchito 3</td>
+            <td>40,000 colones</td>
+        </tr>
+
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total: 170,000 colones</td>
+        </tfoot>
+    </table>
+    <ul>
+        <!--ul es lista no ordenada-->
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+    <ol>
+        <!--ol es lista ordenada-->
+        <li value="10">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <br>
+        <li >
+            <ol>
+                <li style="list-style-type: lower-alpha;"> sub elemeto 1</li>
+                <li style="list-style-type: lower-alpha;"> sub elemeto 3</li>
+                <li style="list-style-type: lower-alpha;"> sub elemeto 3</li>
+                <li style="list-style-type: lower-alpha;"> sub elemeto 4</li> 
+                <li style="list-style-type: lower-alpha;"> sub numero 5 </li>
+            </ol>
+
+        </li>
+    </ol>
+
+
+    <form action="/formulario" method="post">
+        
+        
+        <br>
+        <label for="nombre"> Nombre </label>
+        <input value="valor defecto" type="text" id="nombre" name="nombre" placeholder="Nombre del Chanchito"/>
+        <br><br>
+        <!--con type podemos cambiar el valor del input,
+        con submit se hace boton, con text se queda en texto o como al principio,
+        existe email que espera valor de email, el de pasaword que oculta lo que dijitamos en puntintos
+        radio que se trasnforma en boton de radio, checkbox lo trasforma en casilla, 
+        el de archivo que es file que nos permite seleccionar un archivos de la pc
+        -->
+        <label for="apellido"> Apellido </label>
+        <input value="valor por defecto" type="text" id="apellido" name="apellido" placeholder="Apellido del Chanchito"/>
+        <br><br>
+
+        <label for="comentario">comentario</label> <br>
+        <textarea rows="10" cols="40" id= "comentario" name="comen" placeholder="Ingrese comentario">este es un valor por defecto</textarea>
+        <!--con colds indico cantidad de casisllas 
+            y con rows indico el tamano a lo largo-->
+        <!-- con value agregamos valores por defecto-->
+        <br>
+        <button type="button">Tipo boton</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
+
+        <!--<input type="submit"/>-->
+
+        <!--con la etiqueta button podemos personalizar un boton
+        , hay que ser especificos en con lo queremmos que haga ese boton,
+        con button no se hace nada, debemos especificar el comportamiento con javascrip
+        con reset deja el formulario por defecto, sin modificacion ni nada,
+        con submit trata de enviar el formulario. -->
+
+    
+    </form> 
+    <br>
+
+
+    <!--La etiqueta body nos permite escribir lo que vamos a mostrar en pantalla-->
+    <h1>Mi primera wep</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <h4>Mi cuarto heading</h4>
+    <h5>Mi quinto heading</h5>
+    <h6>Chanchito feliz</h6>
+    usar para indicar titulos en la pagina wep no para agrandar texto
+    <p>Con la etiqueta p podemos agragar texto en la paguina wep</p>
+    <hr>
+    <h2>Hamster a la carga</h2>
+    <p>Texto sobre un hamster feliz</p>
+    <p>Recalcar que con hr podemos separar secciones de nuestra pagina</p>
+    <p>Este texto es <span style="color:chartreuse">mucho mas largo</span>
+         y es para mostrar <br>
+        la etiqueta de span <br><br><br> holaaaaa lolaaaaaa jajajajajaja
+        <!--con la etiqueta br saltamos de linea y entre mas agreguemos mas lineas salta-->
+        <!--en la etiqueta span usamos style que pertenece a CCSS pero aun no aprendemos ese lenguaje de programacion, 
+        solo es para aprender la funcionalidad de la etiquet de span-->
+    
+    </p>
+    <!-- Este es un comentario y no aparece en el explorador-->
+
+    <!--Etiqueta hipervinculo-->
+    <a href="https://www.google.com">Ir a google</a> <br><br> <!-- este metodo recarga la misma pagina-->
+    <a target="_blank" href="https://www.google.com"> Ir a google en otra pestana</a> <br><br> <!--este metodo recarga la pagina en otra pestana-->
+    <img src="imajenes/hamster.jpg" width="400" height="200"/>
+    <!--wisth modifica el ancho de la imajen y heidht modifica el alto de la imajen, en pixeles verdad-->
+
+
+
+</body>
+</html>
